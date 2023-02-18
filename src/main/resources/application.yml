@@ -1,9 +1,9 @@
 spring:
-  datasource:
-    url: jdbc:h2:mem:test
-    username: admin
-  jpa:
-    show-sql: true
-    defer-datasource-initialization: true
-
-#  tworzy baze danych H2 ktora sie tworzy oraz wykorzystuje do uzupełnienia data.sql
+  profiles:
+#    wybór profilu
+    active: dev
+  liquibase:
+#    okreslenie pliku głównego
+    change-log: classpath:db/master.xml
+#    okreslenie jaki profil moze korzystac z liquibase
+    contexts: dev, prod

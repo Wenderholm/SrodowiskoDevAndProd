@@ -1,2 +1,6 @@
-package com.example.srodowiskodevandprod;public interface ProductRepositiry {
+package com.example.srodowiskodevandprod;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface ProductRepository extends CrudRepository<Product, Long> {
 }

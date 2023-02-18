@@ -10,4 +10,4 @@ spring:
 #  tworzy baze danych H2 ktora sie tworzy oraz wykorzystuje do uzupełnienia data.sql
 
   liquibase:
-    contexts: developerka
+    contexts: dev

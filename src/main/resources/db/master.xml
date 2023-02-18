@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.2.xsd">
+    <include file="0001_create_table_product.xml" relativeToChangelogFile="true" />
+<!--    dodanie context="prod" oznacza ze bedzie to uzyte dla profilu prod. mozemy zamiast tu dodac to w pliku z danymi-->
+<!--    <include file="testdata/0001_products.xml" relativeToChangelogFile="true" context="prod"/>-->
+<!--    <include file="testdata/0001_products.xml" relativeToChangelogFile="true" />-->
+    <include file="testdata/testdata.sql" relativeToChangelogFile="true" context="dev"/>
+</databaseChangeLog>
