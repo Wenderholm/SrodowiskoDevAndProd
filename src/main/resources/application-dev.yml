@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test
+    username: admin
+  jpa:
+    show-sql: true
+#    musi być włączone dla uzycia profilu ale wylaczone dla liquidbase
+#    defer-datasource-initialization: true
+
+#  tworzy baze danych H2 ktora sie tworzy oraz wykorzystuje do uzupełnienia data.sql
+
+  liquibase:
+    contexts: developerka
